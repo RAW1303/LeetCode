@@ -41,7 +41,9 @@
 
         public ListNode(int[] intArray)
         {
+            this.val = intArray[0];
             ListNode previousNode = this;
+
             for (int i = 1; i < intArray.Length; i++)
             {
                 ListNode currentNode = new ListNode(intArray[i]);
